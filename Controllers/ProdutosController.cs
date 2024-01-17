@@ -47,7 +47,7 @@ namespace ApiProdutoCategoria.Controllers
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutosbyDescricao(string descricao)
         {
             return await _context.Produtos
-                .Where(p => p.Descricao.ToLower().Contains(descricao))
+                .Where(p => p.Descricao.ToLower().Contains(descricao.ToLower()))
                 .Include(c => c.Categoria)
                 .OrderBy(c => c.Descricao)
                 .ToListAsync();

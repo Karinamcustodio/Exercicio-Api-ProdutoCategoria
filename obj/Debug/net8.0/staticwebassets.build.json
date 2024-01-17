@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G+92Ea0I3ugrwvT1BDJ8m6fuCc0bsvqIUEkhM/NnSp4=",
+  "Hash": "CAYWG7KG5uAXFzCTvpctPyP8a0SmNIq0tn4m1XXX57Q=",
   "Source": "ApiProdutoCategoria",
   "BasePath": "_content/ApiProdutoCategoria",
   "Mode": "Default",
@@ -9,10 +9,10 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "C:\\Users\\karina.custodio\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "Identity": "C:\\Users\\celadm\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\karina.custodio\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\celadm\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "AssetKind": "All",
@@ -25,13 +25,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\karina.custodio\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\celadm\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\karina.custodio\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\celadm\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\karina.custodio\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\celadm\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -44,13 +44,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\karina.custodio\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\celadm\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\karina.custodio\\Desktop\\ApiProdutoCategoria\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ApiProdutoCategoria.styles.css",
+      "Identity": "C:\\Users\\celadm\\Desktop\\ExercicioApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ApiProdutoCategoria.styles.css",
       "SourceId": "ApiProdutoCategoria",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\karina.custodio\\Desktop\\ApiProdutoCategoria\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\celadm\\Desktop\\ExercicioApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ApiProdutoCategoria",
       "RelativePath": "ApiProdutoCategoria.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\karina.custodio\\Desktop\\ApiProdutoCategoria\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ApiProdutoCategoria.styles.css"
+      "OriginalItemSpec": "C:\\Users\\celadm\\Desktop\\ExercicioApi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ApiProdutoCategoria.styles.css"
     }
   ]
 }
