@@ -12,5 +12,6 @@ namespace ApiProdutoCategoria.Dados
 
         public DbSet<Categoria> Categorias { get; set; } = null!;
         public DbSet<Produto> Produtos { get; set; } = null!;
+        public DbSet<User> User { get; set; } = default!;
     }
 }
