@@ -7,10 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ApiProdutoCategoria.Dados;
 using ApiProdutoCategoria.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiProdutoCategoria.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize(Roles = "admin,gerente,funcionario")]
     [ApiController]
     public class ProdutosController : ControllerBase
     {
@@ -114,6 +116,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // DELETE: api/Produtos/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteProduto(int id)
         {
             var produto = await _context.Produtos.FindAsync(id);

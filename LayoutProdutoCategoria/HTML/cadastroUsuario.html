@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/layoutCadastroUsuario.css" />
+    <title>Cadastro de Usuário</title>
+  </head>
+  <body>
+    <aside>
+      <div class="menu-lateral"></div>
+    </aside>
+
+    <nav class="cadastros">
+      <ul>
+        <li class="cliente-nav">Cadastro de Usuário</li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="cadastroFormulario">
+        <form>
+          <div class="formularioPessoal">
+            <label for="nomeUsuario">Nome: </label>
+            <input type="text" id="nomeUsuario" autocomplete="off" required />
+
+            <label for="">Cargo: </label>
+            <select id="cargoUsuario" required>
+              <option>Selecione o seu cargo</option>
+              <option value="admin">Administrador</option>
+              <option value="gerente">Gerente</option>
+              <option value="funcionario">Funcionário</option>
+            </select>
+
+            <label for="emailUsuario">Email: </label>
+            <input type="email" id="emailUsuario" autocomplete="off" required />
+
+            <label for="senhaUsuario">Senha: </label>
+            <input type="password" id="senhaUsuario" autocomplete="off" required />
+          </div>
+
+          <div class="botao">
+            <button class="btn-cancelar" onclick="">Cancelar</button>
+            <button class="btn-salvar" onclick="cadastrarUsuario()">Salvar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="../JS/funcaoCadastrarUsuario.js"></script>
+  </body>
+</html>

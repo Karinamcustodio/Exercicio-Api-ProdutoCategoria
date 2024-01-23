@@ -11,6 +11,7 @@ using ApiProdutoCategoria.Dto;
 using Microsoft.IdentityModel.Tokens;
 using NuGet.Common;
 using ApiProdutoCategoria.Settings;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiProdutoCategoria.Controllers
 {

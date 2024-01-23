@@ -8,10 +8,12 @@ using Microsoft.EntityFrameworkCore;
 using ApiProdutoCategoria.Dados;
 using ApiProdutoCategoria.Models;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiProdutoCategoria.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize(Roles = "admin,gerente,funcionario")]
     [ApiController]
     public class CategoriasController : ControllerBase
     {
@@ -87,6 +89,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // DELETE: api/Categorias/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteCategoria(int id)
         {
             var categoria = await _context.Categorias.FindAsync(id);
