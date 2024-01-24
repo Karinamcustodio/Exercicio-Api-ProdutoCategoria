@@ -1,5 +1,3 @@
-let token = localStorage.getItem("token") && "";
-
 async function cadastrarProduto() {
   let produto = {
     descricao: document.getElementById("descricao").value,

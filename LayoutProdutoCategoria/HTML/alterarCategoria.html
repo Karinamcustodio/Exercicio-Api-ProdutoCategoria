@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/layoutCadastroCategoria.css" />
-    <title>Cadastro Categoria</title>
+    <title>Alterar Categoria</title>
   </head>
   <body>
     <aside>
@@ -13,7 +13,7 @@
 
     <nav class="cadastros">
       <ul>
-        <li class="fornecedor-nav">Cadastro de Categoria</li>
+        <li class="fornecedor-nav">Alterar Categoria</li>
       </ul>
     </nav>
 
@@ -21,6 +21,9 @@
       <div class="cadastroFormulario">
         <form>
           <div class="formulario">
+            <label for="id">Id da categoria: </label>
+            <input type="text" id="id" value="" />
+
             <label for="nome">Nome da categoria: </label>
             <input type="text" id="nome" autocomplete="off" />
           </div>
@@ -32,7 +35,7 @@
             <button class="btn-cancelar" onclick="">
               <a href="listaCategoria.html">Cancelar</a>
             </button>
-            <button class="btn-salvar" onclick="cadastrarCategoria()">
+            <button class="btn-salvar" onclick="alterarCategoria()">
               Salvar
             </button>
           </div>

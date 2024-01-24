@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista Produtos</title>
-</head>
-<body>
-  Precisa fazer o layout da lista de Produtos
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/layoutListaProduto.css" />
+    <title>Lista Produtos</title>
+  </head>
+  <body>
+    <aside>
+      <div class="menu-lateral"></div>
+    </aside>
+
+    <header class="titulo">
+      <p>Produtos</p>
+    </header>
+
+    <main class="listaCadastrada">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Id</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+            <th>Categoria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Via JavaScript -->
+        </tbody>
+      </table>
+
+      <div class="botao">
+        <button class="btn-cadastrar" onclick="">
+          <a href="cadastroProduto.html">Cadastrar</a>
+        </button>
+        <button class="btn-alterar" onclick="listarProduto()">
+          Alterar
+        </button>
+        <button class="btn-cancelar" onclick="">Deletar</button>
+      </div>
+    </main>
+
+    <script src="../JS/funcaoListarProduto.js"></script>
+  </body>
 </html>

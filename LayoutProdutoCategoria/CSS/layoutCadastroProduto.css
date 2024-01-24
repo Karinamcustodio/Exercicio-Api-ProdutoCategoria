@@ -72,7 +72,7 @@ ul {
   color: rgb(160, 62, 6);
 }
 .botao {
-  margin-top: 215px;
+  margin-top: 335px;
   text-align: center;
 }
 .botao a {
@@ -88,7 +88,7 @@ ul {
   padding: 10px;
   font-size: 16px;
   border: none;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .botao .btn-cancelar {
   background-color: #850d0d;

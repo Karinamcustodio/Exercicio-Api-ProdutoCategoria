@@ -12,20 +12,32 @@
         <div class="formularioLogin">
           <div class="formularioLogin-input">
             <label for="emailUsuario">Email</label>
-            <input type="email" id="emailUsuario" placeholder="Digite seu email..." required />
+            <input
+              type="email"
+              id="emailUsuario"
+              placeholder="Digite seu email..."
+              required
+            />
           </div>
           <div class="formularioLogin-input">
             <label for="senhaUsuario">Senha</label>
-            <input type="password" id="senhaUsuario" autocomplete="off" placeholder="Digite sua senha..." required />
+            <input
+              type="password"
+              id="senhaUsuario"
+              autocomplete="off"
+              placeholder="Digite sua senha..."
+              required
+            />
           </div>
         </div>
         <div class="botao">
-          <button class="entrar" onclick="loginUsuario()"><a href="./cadastroCategoria.html">Entrar</a></button>
+          <button class="entrar" onclick="loginUsuario()"><a>Entrar</a></button>
           <a href="#" class="recuperarSenha">Esqueceu a senha?</a>
         </div>
       </form>
     </div>
 
     <script src="../JS/funcaoLoginUsuario.js"></script>
+    <script src="../JS/token.js"></script>
   </body>
 </html>
