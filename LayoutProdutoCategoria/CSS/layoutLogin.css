@@ -8,7 +8,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  /* vh é igual a 1/100 da altura da viewport, se a largura do navegador é 900px, 1vh equivale a 9px*/
 }
 .loginUsuario {
   padding: 40px;
@@ -46,7 +45,7 @@ body {
   text-align: center;
 }
 .botao button {
-  padding-top: 7px;
+  padding-top: 3px;
 }
 .botao a {
   text-decoration: none;

@@ -12,7 +12,6 @@ using Microsoft.AspNetCore.Authorization;
 namespace ApiProdutoCategoria.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize(Roles = "admin,gerente,funcionario")]
     [ApiController]
     public class ProdutosController : ControllerBase
     {
@@ -25,6 +24,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // GET: api/Produtos
         [HttpGet]
+        [Authorize(Roles = "admin,gerente,funcionario")]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos([FromQuery] int numeroPagina = 1, [FromQuery] int numeroCadastro = 3)
         {
             return await _context.Produtos
@@ -35,6 +35,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // GET: api/Produtos/5
         [HttpGet("{id}")]
+        [Authorize(Roles = "admin,gerente,funcionario")]
         public async Task<ActionResult<Produto>> GetProduto(int id)
         {
             var produto = await _context.Produtos.FindAsync(id);
@@ -49,6 +50,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // GET: api/Produtos/Categoria/5
         [HttpGet("Categoria/{id}")]
+        [Authorize(Roles = "admin,gerente,funcionario")]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutosbyCategoria(int id)
         {
             return await _context.Produtos
@@ -60,6 +62,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // GET: api/Produtos/Descricao/palavra
         [HttpGet("Descricao/{descricao}")]
+        [Authorize(Roles = "admin,gerente,funcionario")]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutosbyDescricao(string descricao)
         {
             return await _context.Produtos
@@ -72,6 +75,7 @@ namespace ApiProdutoCategoria.Controllers
         // PUT: api/Produtos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin,gerente")]
         public async Task<IActionResult> PutProduto(int id, Produto produto)
         {
             if (id != produto.Id)
@@ -103,6 +107,7 @@ namespace ApiProdutoCategoria.Controllers
         // POST: api/Produtos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(Roles = "admin,funcionario")]
         public async Task<ActionResult<Produto>> PostProduto(Produto produto)
         {
             produto.CategoriaId = produto.Categoria.Id;

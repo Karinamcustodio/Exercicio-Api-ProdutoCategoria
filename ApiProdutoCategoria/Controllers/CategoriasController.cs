@@ -13,7 +13,6 @@ using Microsoft.AspNetCore.Authorization;
 namespace ApiProdutoCategoria.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize(Roles = "admin,gerente,funcionario")]
     [ApiController]
     public class CategoriasController : ControllerBase
     {
@@ -26,6 +25,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // GET: api/Categorias
         [HttpGet]
+        [Authorize(Roles = "admin,gerente,funcionario")]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategorias()
         {
             return await _context.Categorias.ToListAsync();
@@ -33,6 +33,7 @@ namespace ApiProdutoCategoria.Controllers
 
         // GET: api/Categorias/5
         [HttpGet("{id}")]
+        [Authorize(Roles = "admin,gerente,funcionario")]
         public async Task<ActionResult<Categoria>> GetCategoria(int id)
         {
             var categoria = await _context.Categorias.FindAsync(id);
@@ -48,6 +49,7 @@ namespace ApiProdutoCategoria.Controllers
         // PUT: api/Categorias/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin,gerente")]
         public async Task<IActionResult> PutCategoria(int id, Categoria categoria)
         {
             if (id != categoria.Id)
@@ -79,6 +81,7 @@ namespace ApiProdutoCategoria.Controllers
         // POST: api/Categorias
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(Roles = "admin,funcionario")]
         public async Task<ActionResult<Categoria>> PostCategoria(Categoria categoria)
         {
             _context.Categorias.Add(categoria);

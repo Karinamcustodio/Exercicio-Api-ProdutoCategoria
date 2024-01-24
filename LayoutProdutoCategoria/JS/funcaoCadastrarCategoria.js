@@ -10,6 +10,6 @@ async function cadastrarCategoria() {
       Authorization: "Bearer" + token,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(obj),
+    body: JSON.stringify(categoria),
   });
 }

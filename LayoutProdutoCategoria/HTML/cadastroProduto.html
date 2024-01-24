@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/layoutCadastroProduto.css" />
+    <title>Cadastro Produto</title>
+  </head>
+  <body>
+    <aside>
+      <div class="menu-lateral"></div>
+    </aside>
+
+    <nav class="cadastros">
+      <ul>
+        <li class="fornecedor-nav">Cadastro de Produto</li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="cadastroFormulario">
+        <form>
+          <div class="formulario">
+            <label for="descricao">Descrição do produto: </label>
+            <input type="text" id="descricao" autocomplete="off" />
+
+            <label for="preco">Preço Unitário: </label>
+            <input type="text" id="preco" autocomplete="off" />
+
+            <label for="estoque">Quantidade Estoque: </label>
+            <input type="number" id="estoque" autocomplete="off" />
+
+            <label for="categoriaId">Categoria: </label>
+            <select id="categoriaId" required>
+              <option onclick="pesquisarCategoria()">
+                Escolha a categoria
+              </option>
+            </select>
+          </div>
+
+          <div class="botao">
+            <button class="btn-cancelar" onclick="">
+              <a href="listaProduto.html">Cancelar</a>
+            </button>
+            <button class="btn-salvar" onclick="cadastrarProduto()">
+              Salvar
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="../JS/funcaoCadastrarProduto.js"></script>
+  </body>
+</html>

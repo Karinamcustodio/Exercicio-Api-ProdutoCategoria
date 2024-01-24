@@ -33,9 +33,9 @@ ul {
 }
 .cadastroFormulario {
   display: flex;
-  width: 40%;
+  width: 29.5%;
   max-width: 100%;
-  margin-left: 260px;
+  margin-left: 160px;
   margin-top: 30px;
   color: rgb(160, 62, 6);
 }
@@ -57,7 +57,7 @@ ul {
   background-color: rgb(238, 238, 238);
   padding: 10px;
   margin: 10px;
-  width: 96%;
+  width: 100%;
   font-size: 18px;
 }
 .formulario select {
@@ -67,16 +67,18 @@ ul {
   background-color: rgb(238, 238, 238);
   padding: 10px;
   margin: 10px;
-  width: 100%;
+  width: 105%;
   font-size: 15px;
   color: rgb(160, 62, 6);
 }
 .botao {
-  margin-top: 15px;
+  margin-top: 215px;
   text-align: center;
 }
 .botao a {
   text-decoration: none;
+  background-color: transparent;
+  color: white;
 }
 .botao .btn-salvar {
   background-color: #0c4103;

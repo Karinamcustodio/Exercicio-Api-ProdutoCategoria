@@ -20,63 +20,41 @@ body {
   bottom: 0;
   background-color: rgb(160, 62, 6);
 }
-.cadastros {
+.titulo {
   display: flex;
   width: 100%;
   max-width: 100%;
   margin-left: 160px;
   color: rgb(160, 62, 6);
 }
-ul {
-  list-style-type: none;
-  margin: 15px 0 15px 15px;
+.titulo p {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
-.cadastroFormulario {
-  display: flex;
-  width: 40%;
-  max-width: 100%;
-  margin-left: 260px;
-  margin-top: 30px;
-  color: rgb(160, 62, 6);
-}
-.formulario form {
+.listaCadastrada {
   display: grid;
   flex-direction: column;
+  margin-left: 130px;
   padding: 20px;
-  width: 100%;
+  width: 50%;
   margin-top: 15px;
-  font-size: 15px;
-}
-.formulario label {
-  background-color: transparent;
-}
-.formulario input {
-  border-radius: 20px;
-  border: none;
-  box-shadow: 10px 10px 40px rgba(141, 141, 141, 0.2);
-  background-color: rgb(238, 238, 238);
-  padding: 10px;
-  margin: 10px;
-  width: 96%;
   font-size: 18px;
 }
-.formulario select {
-  border-radius: 20px;
-  border: none;
-  box-shadow: 10px 10px 40px rgba(141, 141, 141, 0.2);
-  background-color: rgb(238, 238, 238);
-  padding: 10px;
-  margin: 10px;
-  width: 100%;
-  font-size: 15px;
+.listaCadastrada thead {
   color: rgb(160, 62, 6);
 }
+th {
+  border-bottom: 1px solid;
+  border-color: rgb(160, 62, 6);
+}
 .botao {
-  margin-top: 15px;
+  margin-top: 215px;
   text-align: center;
 }
 .botao a {
   text-decoration: none;
+  background-color: transparent;
+  color: white;
 }
 .botao .btn-salvar {
   background-color: #0c4103;
