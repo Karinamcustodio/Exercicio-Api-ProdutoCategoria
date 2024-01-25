@@ -5,26 +5,17 @@
 }
 body {
   font-family: Arial, sans-serif;
-  margin: 8px;
+  margin: 85px;
+  margin-left: 180px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-}
-.menu-lateral {
-  display: flex;
-  width: 8%;
-  padding: 2.5px;
-  left: 32px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  background-color: rgb(160, 62, 6);
 }
 .cadastros {
   display: flex;
   width: 100%;
   max-width: 100%;
-  margin-left: 160px;
+  margin-left: 190px;
   color: rgb(160, 62, 6);
 }
 ul {
@@ -36,7 +27,7 @@ ul {
   width: 40%;
   max-width: 100%;
   margin-left: 260px;
-  margin-top: 30px;
+  margin-top: 40px;
   color: rgb(160, 62, 6);
 }
 .formulario form {
@@ -72,15 +63,16 @@ ul {
   color: rgb(160, 62, 6);
 }
 .botao {
-  margin-top: 15px;
+  margin-top: 35px;
   text-align: center;
 }
 .botao a {
   text-decoration: none;
+  background-color: transparent;
+  color: rgb(240, 240, 240);
 }
 .botao .btn-salvar {
   background-color: #0c4103;
-  color: white;
   border-radius: 10px;
   width: 90px;
   padding: 10px;
@@ -90,7 +82,6 @@ ul {
 }
 .botao .btn-cancelar {
   background-color: #850d0d;
-  color: white;
   border-radius: 10px;
   width: 90px;
   padding: 10px;

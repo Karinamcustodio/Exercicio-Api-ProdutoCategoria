@@ -11,5 +11,5 @@ async function cadastrarUsuario() {
     body: JSON.stringify(usuarioNovo),
   });
 
-  alert("Cadastro enviado com sucesso!")
+  alert("Cadastro enviado com sucesso!");
 }
