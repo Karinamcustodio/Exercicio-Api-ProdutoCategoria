@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/layoutCadastroCategoria.css" />
+    <link rel="stylesheet" href="../CSS/layoutAlterarCategoria.css" />
     <title>Alterar Categoria</title>
   </head>
   <body>
@@ -21,30 +21,27 @@
       <div class="cadastroFormulario">
         <form>
           <div class="formulario">
-            <label for="id">Id da categoria: </label>
-            <input type="text" id="id" value="" />
+            <label for="id">Id: </label>
+            <input type="text" id="id" />
 
             <label for="nome">Nome da categoria: </label>
             <input type="text" id="nome" autocomplete="off" />
           </div>
 
           <div class="botao">
-            <button class="btn-lista" onclick="listarCategorias()">
+            <button class="btn-lista"><a href="menu.html">Menu</a></button>
+            <button class="btn-cancelar">
               <a href="listaCategorias.html">Lista</a>
             </button>
-            <button class="btn-cancelar" onclick="">
-              <a href="listaCategoria.html">Cancelar</a>
-            </button>
             <button class="btn-salvar" onclick="alterarCategoria()">
-              Salvar
+              <a>Alterar</a>
             </button>
           </div>
         </form>
       </div>
     </main>
 
-    <script src="../JS/funcaoCadastrarCategoria.js"></script>
-    <script src="../JS/funcaoListarCategorias.js"></script>
+    <script src="../JS/funcaoAlterarCategoria.js"></script>
     <script src="../JS/token.js"></script>
   </body>
 </html>
