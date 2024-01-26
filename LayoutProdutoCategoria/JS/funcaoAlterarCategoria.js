@@ -15,8 +15,7 @@ async function alterarCategoria() {
       nome: document.getElementById("nome").value,
     };
 
-    let response = await fetch(
-      `https://localhost:7044/api/Categorias/${alterarCategoriaExistente.id}`,
+    let response = await fetch(`https://localhost:7044/api/Categorias/${alterarCategoriaExistente.id}`,
       {
         method: "PUT",
         headers: {

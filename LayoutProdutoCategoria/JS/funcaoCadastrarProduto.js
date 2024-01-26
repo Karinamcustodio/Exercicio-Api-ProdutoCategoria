@@ -15,9 +15,13 @@ async function cadastrarProduto() {
       preco: document.getElementById("preco").value,
       estoque: document.getElementById("estoque").value,
       categoriaId: document.getElementById("categoriaId").value,
+      categoria: {
+        id: document.getElementById("id").value,
+      }
     };
 
-    let response = await fetch("https://localhost:7044/api/Produtos", {
+    let response = await fetch("https://localhost:7044/api/Produtos", 
+    {
       method: "POST",
       headers: {
         Authorization: "Bearer " + token,

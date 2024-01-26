@@ -14,7 +14,8 @@ async function cadastrarCategoria() {
       nome: document.getElementById("nome").value,
     };
 
-    let response = await fetch("https://localhost:7044/api/Categorias", {
+    let response = await fetch("https://localhost:7044/api/Categorias", 
+    {
       method: "POST",
       headers: {
         Authorization: "Bearer " + token,

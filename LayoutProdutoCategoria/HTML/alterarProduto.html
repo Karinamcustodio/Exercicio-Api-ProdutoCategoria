@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/layoutAlterarCategoria.css" />
-    <title>Alterar Categoria</title>
+    <link rel="stylesheet" href="../CSS/layoutAlterarProduto.css" />
+    <title>Alterar Produto</title>
   </head>
   <body>
     <aside>
@@ -13,7 +13,7 @@
 
     <nav class="cadastros">
       <ul>
-        <li class="fornecedor-nav">Alterar Categoria</li>
+        <li class="fornecedor-nav">Alterar Produto</li>
       </ul>
     </nav>
 
@@ -23,15 +23,26 @@
           <div class="formulario">
             <label for="id">Id: </label>
             <input type="text" id="id" />
+            
+            <label for="descricao">Descrição do produto: </label>
+            <input type="text" id="descricao" autocomplete="off" />
 
-            <label for="nome">Nome da categoria: </label>
-            <input type="text" id="nome" autocomplete="off" />
+            <label for="preco">Preço Unitário: </label>
+            <input type="text" id="preco" autocomplete="off" />
+
+            <label for="estoque">Quantidade Estoque: </label>
+            <input type="number" id="estoque" autocomplete="off" />
+
+            <label for="categoriaId">Categoria: </label>
+            <select id="categoriaId" required onchange="pesquisarCategoria()">
+              <option value="">Escolha a categoria</option>
+            </select>
           </div>
 
           <div class="botao">
             <button class="btn-lista"><a href="menu.html">Menu</a></button>
             <button class="btn-cancelar">
-              <a href="listaCategorias.html">Lista</a>
+              <a href="listaProdutos.html">Lista</a>
             </button>
             <button class="btn-salvar" onclick="verificarToken()">
               <a>Alterar</a>
@@ -41,7 +52,7 @@
       </div>
     </main>
 
-    <script src="../JS/funcaoAlterarCategoria.js"></script>
+    <script src="../JS/funcaoAlterarProduto.js"></script>
     <script src="../JS/token.js"></script>
   </body>
 </html>

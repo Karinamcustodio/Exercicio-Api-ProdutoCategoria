@@ -10,15 +10,14 @@ function verificarToken() {
 
 async function excluirCategoria() {
   try {
-    let deletarCategoria = document.getElementById("id").value;
+    let deletarCategoriaId = document.getElementById("id").value;
 
-    if (!deletarCategoria) {
+    if (!deletarCategoriaId) {
       alert("Por favor, forneça um ID válido para excluir a categoria.");
       return;
     }
 
-    let response = await fetch(
-      `https://localhost:7044/api/Categorias/${deletarCategoria.id}`,
+    let response = await fetch(`https://localhost:7044/api/Categorias/${deletarCategoriaId}`,
       {
         method: "DELETE",
         headers: {
