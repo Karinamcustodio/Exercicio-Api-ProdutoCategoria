@@ -73,7 +73,6 @@ namespace ApiProdutoCategoria.Controllers
         }
         
         // PUT: api/Produtos/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         [Authorize(Roles = "admin,gerente")]
         public async Task<IActionResult> PutProduto(int id, Produto produto)
@@ -105,7 +104,6 @@ namespace ApiProdutoCategoria.Controllers
         }
 
         // POST: api/Produtos
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         [Authorize(Roles = "admin,funcionario")]
         public async Task<ActionResult<Produto>> PostProduto(Produto produto)

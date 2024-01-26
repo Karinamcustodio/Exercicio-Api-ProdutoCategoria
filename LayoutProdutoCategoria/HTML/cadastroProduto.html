@@ -31,27 +31,22 @@
             <input type="number" id="estoque" autocomplete="off" />
 
             <label for="categoriaId">Categoria: </label>
-            <select id="categoriaId" required>
-              <option onclick="pesquisarCategoria()">
-                Escolha a categoria
-              </option>
+            <select id="categoriaId" required onchange="pesquisarCategoria()">
+              <option value="">Escolha a categoria</option>
             </select>
           </div>
 
           <div class="botao">
-            <button class="btn-cancelar" onclick="">
-              <a href="listaProduto.html">Cancelar</a>
-            </button>
-            <button class="btn-salvar" onclick="cadastrarProduto()">
-              Salvar
-            </button>
+            <button class="btn-lista"><a href="menu.html">Menu</a></button>
+            <button class="btn-cancelar"><a href="listaProdutos.html">Lista</a></button>
+            <button class="btn-salvar" onclick="verificarToken()"><a>Cadastar</a></button>
           </div>
         </form>
       </div>
     </main>
 
+    <script src="../JS/funcaoPreencherCategoria.js"></script>
     <script src="../JS/funcaoCadastrarProduto.js"></script>
-    <script src="../JS/funcaoListarProduto.js"></script>
     <script src="../JS/token.js"></script>
   </body>
 </html>

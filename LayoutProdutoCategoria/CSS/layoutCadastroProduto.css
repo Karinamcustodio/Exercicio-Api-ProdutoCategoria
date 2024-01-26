@@ -88,7 +88,16 @@ ul {
   padding: 10px;
   font-size: 16px;
   border: none;
-  margin-left: 40px;
+  margin-left: 30px;
+}
+.botao .btn-lista {
+  background-color: rgb(13, 16, 56);
+  color: white;
+  border-radius: 10px;
+  width: 90px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
 }
 .botao .btn-cancelar {
   background-color: #850d0d;
@@ -98,4 +107,5 @@ ul {
   padding: 10px;
   font-size: 16px;
   border: none;
+  margin-left: 30px;
 }

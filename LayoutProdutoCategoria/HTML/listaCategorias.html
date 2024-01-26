@@ -31,13 +31,20 @@
 
       <div class="botao">
         <button class="btn-lista"><a href="menu.html">Menu</a></button>
-        <button class="btn-cadastrar"><a href="cadastroCategoria.html">Cadastrar</a></button>
-        <button class="btn-alterar"><a href="alterarCategoria.html">Alterar</a></button>
-        <button class="btn-cancelar" onclick=""><a>Deletar</a></button>
+        <button class="btn-cadastrar">
+          <a href="cadastroCategoria.html">Cadastrar</a>
+        </button>
+        <button class="btn-alterar">
+          <a href="alterarCategoria.html">Alterar</a>
+        </button>
+        <button class="btn-cancelar" onclick="verificarToken()">
+          <a>Deletar</a>
+        </button>
       </div>
     </main>
 
     <script src="../JS/funcaoListarCategorias.js"></script>
+    <script src="../JS/funcaoExcluirCategoria.js"></script>
     <script src="../JS/token.js"></script>
   </body>
 </html>
